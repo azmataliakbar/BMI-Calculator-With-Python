@@ -3,6 +3,15 @@ import streamlit as st
 # Page configuration
 st.set_page_config(page_title="BMI Calculator", page_icon="📏", layout="centered")
 
+# Custom CSS to set body color to black
+st.markdown("""
+    <style>
+    body {
+        background-color: black !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Title and description
 st.markdown("<h1 style='text-align: center; color: #FF4500;'>🐍 Learn Python 🐍</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: #8B5CF6;'>💻  BMI Calculator  💻</h1>", unsafe_allow_html=True)
