@@ -1,17 +1,27 @@
 import streamlit as st
 
-# Page configuration
-st.set_page_config(page_title="BMI Calculator", page_icon="📏", layout="centered")
+# Page config without 'theme'
+st.set_page_config(
+    page_title="BMI Calculator",
+    page_icon="📏",
+    layout="centered"
+)
 
-# Custom CSS to set body color to black
+# Custom CSS for colors and fonts
 st.markdown("""
     <style>
-    .reportview-container, .main, body {
-    background-color: black !important;
+    body {
+        background-color: #000000;  /* Black background */
+        color: #FFFFFF;  /* White text */
+        font-family: sans-serif;
+    }
+    .stButton > button {
+        background-color: #FF4500;  /* Button color */
+        color: white;  /* Button text color */
+        border: 2px solid #FFB6C1;  /* Optional border color */
     }
     </style>
 """, unsafe_allow_html=True)
-
 
 
 # Title and description
@@ -61,3 +71,4 @@ if bmi is not None:
 
 # Author
 st.markdown("<h4 style='text-align: center; color: #FF4500;'>Author: Azmat Ali</h4>", unsafe_allow_html=True)
+
