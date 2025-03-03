@@ -6,11 +6,12 @@ st.set_page_config(page_title="BMI Calculator", page_icon="📏", layout="center
 # Custom CSS to set body color to black
 st.markdown("""
     <style>
-    body {
+    .main, body {
         background-color: black !important;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Title and description
 st.markdown("<h1 style='text-align: center; color: #FF4500;'>🐍 Learn Python 🐍</h1>", unsafe_allow_html=True)
