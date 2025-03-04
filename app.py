@@ -28,7 +28,7 @@ st.markdown("""
 # Title and description
 st.markdown("<h1 style='text-align: center; color: #FF4500;'>🐍 Learn Python 🐍</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: #8B5CF6;'>💻  BMI Calculator  💻</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: #0bf007;'>Enter your height and weight to calculate your BMI.</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: green;'>Enter your height and weight to calculate your BMI.</h4>", unsafe_allow_html=True)
 
 # Input fields for height and weight
 height = st.number_input("Height (cm)", min_value=0.0, step=0.1, format="%.1f")
